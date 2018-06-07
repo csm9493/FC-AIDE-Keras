@@ -1,4 +1,4 @@
-from core.sup_test import Supervised_test as sup_test
+from core.test_sup import Supervised_test as test_sup
 from scipy import misc
 import numpy as np
 
@@ -16,8 +16,8 @@ if noise_sigma not in [15, 25, 30, 50, 75]:
 clean_image = misc.imread(file_path + file_name_clean)
 noisy_image = clean_image + np.random.normal(noise_mean, noise_sigma, clean_image.shape)
 
-s_test = sup_test(clean_image, noisy_image, noise_sigma)
-denoised_img, psnr, ssim = s_test.denoising()
+t_s = test_sup(clean_image, noisy_image, noise_sigma)
+denoised_img, psnr, ssim = t_s.denoising()
 
 misc.imsave(file_name +'_denoised_sup.png', denoised_img)
 

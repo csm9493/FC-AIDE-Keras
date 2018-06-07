@@ -1,4 +1,4 @@
-from core.ft_test import Fine_tuning as ft_test
+from core.test_blind_sup import Supervised_test as test_sup
 from scipy import misc
 import numpy as np
 
@@ -9,16 +9,12 @@ file_path = './data/'
 noise_mean = 0
 noise_sigma = 30
 
-if noise_sigma not in [15, 25, 30, 50, 75]:
-    print ('No weight file')
-    exit()
-    
 clean_image = misc.imread(file_path + file_name_clean)
 noisy_image = clean_image + np.random.normal(noise_mean, noise_sigma, clean_image.shape)
 
-ft_test = ft_test(clean_image, noisy_image, noise_sigma)
-denoised_img, psnr, ssim = ft_test.fine_tuning()
+t_s = test_sup(clean_image, noisy_image, noise_sigma)
+denoised_img, psnr, ssim = t_s.denoising()
 
-misc.imsave(file_name +'_denoised_ft.png', denoised_img)
+misc.imsave(file_name +'_denoised_blind_sup.png', denoised_img)
 
 print ('PSNR : ' + str(round(psnr,2)) + '\nSSIM : ' + str(round(ssim,4)))
