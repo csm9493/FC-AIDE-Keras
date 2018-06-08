@@ -55,7 +55,7 @@
 
 ## Mismatch / blind case
 
-<img src="figures/blind_mismatch.png" width="367px"/>
+<img src="figures/blind_mismatch.png" width="100%"/>
 
 
 # Requirements and Dependencies
