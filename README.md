@@ -33,7 +33,7 @@
 
 **The average PSNR(dB) on Set13.**
 
-| $\sigma$ 	|  BM3D 	|  RED  	| MemNet 	| DnCNN-S 	| DnCNN-B 	| FC-AIDE<sub>_S</sub> 	| FC-AIDE<sub>_S+FT</sub> 	| FC-AIDE<sub>_B</sub> 	| FC-AIDE<sub>_B+FT</sub> 	|
+| Sigma 	|  BM3D 	|  RED  	| MemNet 	| DnCNN-S 	| DnCNN-B 	| FC-AIDE<sub>_S</sub> 	| FC-AIDE<sub>_S+FT</sub> 	| FC-AIDE<sub>_B</sub> 	| FC-AIDE<sub>_B+FT</sub> 	|
 |:--------:	|:-----:	|:-----:	|:------:	|:-------:	|:-------:	|:--------------------:	|:-----------------------:	|:--------------------:	|:-----------------------:	|
 |    15    	| 31.98 	|   -   	|    -   	|  32.21  	|  31.58  	|         32.08        	|          **32.59**          	|         31.72        	|          32.52          	|
 |    25    	| 29.44 	|   -   	|    -   	|  29.63  	|  29.22  	|         29.57        	|          **30.14**          	|         29.34        	|          30.03          	|
@@ -45,7 +45,7 @@
 
 **The average PSNR(dB) on BSD68.**
 
-| $\sigma$ 	|  BM3D 	|  RED  	| MemNet 	| DnCNN-S 	| DnCNN-B 	| FC-AIDE<sub>_S</sub> 	| FC-AIDE<sub>_S+FT</sub> 	| FC-AIDE<sub>_B</sub> 	| FC-AIDE<sub>_B+FT</sub> 	|
+| Sigma 	|  BM3D 	|  RED  	| MemNet 	| DnCNN-S 	| DnCNN-B 	| FC-AIDE<sub>_S</sub> 	| FC-AIDE<sub>_S+FT</sub> 	| FC-AIDE<sub>_B</sub> 	| FC-AIDE<sub>_B+FT</sub> 	|
 |:--------:	|:-----:	|:-----:	|:------:	|:-------:	|:-------:	|:--------------------:	|:-----------------------:	|:--------------------:	|:-----------------------:	|
 |    15    	| 31.07 	|   -   	|    -   	|  31.72  	|  31.60  	|         31.63        	|          **31.75**          	|         31.47        	|          31.72          	|
 |    25    	| 28.56 	|   -   	|    -   	|  29.22  	|  29.15  	|         29.18        	|          **29.31**          	|         29.04        	|          29.26          	|
