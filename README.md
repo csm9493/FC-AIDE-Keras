@@ -6,19 +6,19 @@
    * 'sigma_estimation.py'  
    : estimate a noise sigma of the noisy image
    * 'test_fc_aide_sup.py'  
-   : denoise a noisy image using the supervised model(trained on the specific noise level)
+   : denoise a noisy image using the supervised model trained on the specific noise level only
    * 'test_fc_aide_ft.py'  
-   : denoise a noisy image using the supervised model(trained on the specific noise level) + fine-tuning
+   : denoise a noisy image using the supervised model + fine-tuning
    * 'test_fc_aide_blind_sup.py'  
-   : denoise a noisy image using the supervised model(trained on various[0,50])
+   : denoise a noisy image using the supervised model trained on various noise level only
    * 'test_fc_aide_blind_ft.py'  
-   : denoise a noisy image using the supervised model(trained on blind noise sets[0,50]) + fine-tuning
+   : denoise a noisy image using the supervised model + fine-tuning
    * 'test_fc_aide_blind_estimated_sigma_ft.py'  
-   : fine-tuning a noisy image using an estimated noise sigma
+   : estimate a sigma of the noise level and then denoise using the supervised model + fine-tuning
 
 - weights
-   * 'sigmaX.hdf5' : a weight trained on a specific noise level([15, 25, 30, 50, 75])
-   * 'blind.hdf5' : the weight trained on various noise levels([0,50])
+   * 'sigmaX.hdf5'  : a weight trained on a specific noise level([15, 25, 30, 50, 75])
+   * 'blind.hdf5'  : the weight trained on various noise levels([0,50])
 
 - test images
    * 'Set13'
@@ -29,11 +29,11 @@
 # Results
 
 
-## Gaussian Denoising
+## Set13
 
-**The average PSNR(dB) results of different methods on the BSD68 dataset.**
+**The average PSNR(dB) on Set13.**
 
-|  Noise Level | BM3D | WNNM  | EPLL | MLP |  CSF |TNRD  | DnCNN | DnCNN-B | FDnCNN |
+|  Noise Level | BM3D | RED  | MemNet | DnCNN-S |  DnCNN-B | N-AIDE$_S$  | N-AIDE$_S+FT$ | DnCNN-B | FDnCNN |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 | 15  |  31.07  |   31.37   | 31.21  |   -   |  31.24 |  31.42 | **31.73** | **31.61**  |**31.69**  |
 | 25  |  28.57  |   28.83   | 28.68  | 28.96 |  28.74 |  28.92 | **29.23** | **29.16**  |**29.22**  |
