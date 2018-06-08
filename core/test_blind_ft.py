@@ -6,6 +6,7 @@ import scipy.io as sio
 from sklearn.metrics import mean_squared_error
 from skimage import measure
 
+sigma_arr = [15, 25, 30, 50, 75]
 ft_epoch_arr = {'sigma_15':30, 'sigma_25':20, 'sigma_30':17, 'sigma_50':12, 'sigma_75':16, 'sigma_blind':16}
 
 class Fine_tuning:
@@ -19,7 +20,11 @@ class Fine_tuning:
         self.img_x = clean_image.shape[0]
         self.img_y = clean_image.shape[1]
         
-        self.ep = ft_epoch_arr['sigma_'+str(self.noise_sigma)]
+        if noise_sigma in sigma_arr:
+            self.ep = ft_epoch_arr['sigma_'+str(self.noise_sigma)]
+        else:
+            self.ep = ft_epoch_arr['sigma_blind']
+            
         self.mini_batch_size = 1
         
         return

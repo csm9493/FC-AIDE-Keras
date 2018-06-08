@@ -8,7 +8,6 @@ file_path = './data/'
 
 noise_mean = 0
 noise_sigma = 30
-#noise_sigma = 'blind'
 
 clean_image = misc.imread(file_path + file_name_clean)
 noisy_image = clean_image + np.random.normal(noise_mean, noise_sigma, clean_image.shape)
