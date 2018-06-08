@@ -2,25 +2,25 @@
 
 # Contents
 
-- 1. code for testing
-   * 'sigma_estimation.py'
+- code for testing
+   * 'sigma_estimation.py' 
    : estimate a noise sigma of the noisy image
-   * 'test_fc_aide_sup.py'
+   * 'test_fc_aide_sup.py' 
    : denoise a noisy image using the supervised model(trained on the specific noise level)
-   * 'test_fc_aide_ft.py'
+   * 'test_fc_aide_ft.py' 
    : denoise a noisy image using the supervised model(trained on the specific noise level) + fine-tuning
-   * 'test_fc_aide_blind_sup.py'
+   * 'test_fc_aide_blind_sup.py' 
    : denoise a noisy image using the supervised model(trained on various[0,50])
-   * 'test_fc_aide_blind_ft.py'
+   * 'test_fc_aide_blind_ft.py' 
    : denoise a noisy image using the supervised model(trained on blind noise sets[0,50]) + fine-tuning
-   * 'test_fc_aide_blind_estimated_sigma_ft.py'
+   * 'test_fc_aide_blind_estimated_sigma_ft.py' 
    : fine-tuning a noisy image using an estimated noise sigma
 
-- 2. weights
+- weights
    * 'sigmaX.hdf5' : a weight trained on a specific noise level([15, 25, 30, 50, 75])
    * 'blind.hdf5' : the weight trained on various noise levels([0,50])
 
-- 3. test images
+- test images
    * 'Set13'
    * 'BSD68'
    * 'Medical60'
