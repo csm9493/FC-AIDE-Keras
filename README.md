@@ -33,7 +33,7 @@
 
 **The average PSNR(dB) on Set13.**
 
-|  Noise Level | BM3D | RED  | MemNet | DnCNN-S |  DnCNN-B | N-AIDE$$_S$$  | N-AIDE$$_S+FT$$ | DnCNN-B | FDnCNN |
+|  Noise Level | BM3D | RED  | MemNet | DnCNN-S |  DnCNN-B | N-AIDE~_S~  | N-AIDE~_S+FT~ | DnCNN-B | FDnCNN |
 |:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|:-------:|
 | 15  |  31.07  |   31.37   | 31.21  |   -   |  31.24 |  31.42 | **31.73** | **31.61**  |**31.69**  |
 | 25  |  28.57  |   28.83   | 28.68  | 28.96 |  28.74 |  28.92 | **29.23** | **29.16**  |**29.22**  |
