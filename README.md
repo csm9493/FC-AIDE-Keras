@@ -1,20 +1,30 @@
 # [Fully Convolutional Adaptive Image Denoiser(FC-AIDE)](http://ieeexplore.ieee.org/document/7839189/)
 
-# Testing
+# Contents
 
-- [demos]  `Demo_test_DnCNN-.m`.
+- 1. code for testing
+   * 'sigma_estimation.py'
+   : estimate a noise sigma of the noisy image
+   * 'test_fc_aide_sup.py'
+   : denoise a noisy image using the supervised model(trained on the specific noise level)
+   * 'test_fc_aide_ft.py'
+   : denoise a noisy image using the supervised model(trained on the specific noise level) + fine-tuning
+   * 'test_fc_aide_blind_sup.py'
+   : denoise a noisy image using the supervised model(trained on various[0,50])
+   * 'test_fc_aide_blind_ft.py'
+   : denoise a noisy image using the supervised model(trained on blind noise sets[0,50]) + fine-tuning
+   * 'test_fc_aide_blind_estimated_sigma_ft.py'
+   : fine-tuning a noisy image using an estimated noise sigma
 
-- [models]  including the trained models for Gaussian denoising; a single model for Gaussian denoising, single image super-resolution (SISR) and deblocking.
+- 2. weights
+   * 'sigmaX.hdf5' : a weight trained on a specific noise level([15, 25, 30, 50, 75])
+   * 'blind.hdf5' : the weight trained on various noise levels([0,50])
 
-- [testsets]  BSD68 and Set10 for Gaussian denoising evaluation; Set5, Set14, BSD100 and Urban100 datasets for SISR evaluation; Classic5 and LIVE1 for JPEG image deblocking evaluation.
-
-# Network Design Rationale
-
-- The residual of a noisy image corrupted by additive white Gaussian noise (AWGN) follows a Gaussian distribution.
-    * Batch normalization and residual learning are beneficial to Gaussian denoising (especially for a single noise level).
-
-- Predicting the residual can be interpreted as performing one gradient descent inference step at starting point (i.e., noisy image).
-    * The parameters in DnCNN are mainly representing the image priors (task-independent), thus it is possible to learn a single model for different tasks.
+- 3. test images
+   * 'Set13'
+   * 'BSD68'
+   * 'Medical60'
+   
 
 # Results
 
