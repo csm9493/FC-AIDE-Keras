@@ -60,7 +60,7 @@
 
 
 # Requirements and Dependencies
-- Python 2.7 / Python 3.6(Not confirmed)
+- Python 2.7 / Python 3.6
 - CUDA v8.0 / CuDNN v5.1
 - Tensorflow v1.2.1
 - Keras v2.0.8
