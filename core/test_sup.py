@@ -1,5 +1,5 @@
 from sklearn.metrics import mean_squared_error
-from models import make_model
+from .models import make_model
 import numpy as np
 import math
 
@@ -34,7 +34,7 @@ class Supervised_test:
     
     def get_SSIM(self, X, X_hat):
         
-        test_SSIM = measure.structural_similarity(X, X_hat, dynamic_range=X.max() - X.min())
+        test_SSIM = measure.compare_ssim(X, X_hat, dynamic_range=X.max() - X.min())
         
         return test_SSIM
     

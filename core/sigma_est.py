@@ -1,5 +1,5 @@
 from sklearn.metrics import mean_squared_error
-from models import make_model
+from .models import make_model
 import numpy as np
 import math
 from keras.optimizers import Adam
@@ -57,13 +57,13 @@ class Fine_tuning:
 
             save_result = Save_result()
             
-            sigma_hat_index = (min_sig_index + max_sig_index)/2
+            sigma_hat_index = (min_sig_index + max_sig_index)//2
             
             sigma_hat = sigma_arr[sigma_hat_index]
             self.preprocessing(sigma_hat)
             
-            print 'current sigma_hat : ', sigma_hat
-            print ''
+            print ('current sigma_hat : ', sigma_hat)
+            print ('')
 
             model = self.get_model()
             model.fit(self.X_data, self.Y_data, verbose=0, batch_size = self.mini_batch_size, epochs = self.ep,callbacks=[save_result])
@@ -76,7 +76,7 @@ class Fine_tuning:
             else:
                 min_sig_index = sigma_hat_index
 
-            if sigma_hat_index == (min_sig_index + max_sig_index)/2:
+            if sigma_hat_index == (min_sig_index + max_sig_index)//2:
                 sigma_hat = sigma_arr[sigma_hat_index]
                 break
         

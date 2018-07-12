@@ -1,4 +1,4 @@
-from models import make_model
+from .models import make_model
 import numpy as np
 import math
 import scipy.io as sio
@@ -33,7 +33,7 @@ class Fine_tuning:
     
     def get_SSIM(self, X, X_hat):
         
-        test_SSIM = measure.structural_similarity(X, X_hat, dynamic_range=X.max() - X.min())
+        test_SSIM = measure.compare_ssim(X, X_hat, dynamic_range=X.max() - X.min())
         
         return test_SSIM
     
