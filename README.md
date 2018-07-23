@@ -1,8 +1,5 @@
 # [Fully Convolutional Adaptive Image Denoiser(FC-AIDE)]
-<!--
-(http://ieeexplore.ieee.org/document/7839189/)
--->
-
+(https://arxiv.org/abs/1807.07569)
 # Contents
 
 - code for testing
