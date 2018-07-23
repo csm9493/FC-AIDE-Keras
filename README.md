@@ -1,6 +1,5 @@
 # [Fully Convolutional Adaptive Image Denoiser(FC-AIDE)](https://arxiv.org/abs/1807.07569)
 # Contents
-<meta name="google-site-verification" content="-6wLBBCf2WHpxwkZGIw2uhJGnKC8nVmMQhwwwWczBrw" />
 - code for testing
    * 'sigma_estimation.py'  
    : estimate a noise sigma of the noisy image
