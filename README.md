@@ -1,4 +1,4 @@
-# [Fully Convolutional Adaptive Image Denoiser(FC-AIDE)](https://arxiv.org/abs/1807.07569)
+# [FC-AIDE: Fully Convolutional Adaptive Image Denoiser](https://arxiv.org/abs/1807.07569)
 # Contents
 - code for testing
    * 'sigma_estimation.py'  
@@ -65,16 +65,17 @@
 
 # Citation
 
-<!--
-```
-@article{zhang2017beyond,
-  title={Beyond a {Gaussian} denoiser: Residual learning of deep {CNN} for image denoising},
-  author={Zhang, Kai and Zuo, Wangmeng and Chen, Yunjin and Meng, Deyu and Zhang, Lei},
-  journal={IEEE Transactions on Image Processing},
-  year={2017},
-  volume={26}, 
-  number={7}, 
-  pages={3142-3155}, 
+@ARTICLE{2018arXiv180707569C,
+   author = {{Cha}, S. and {Moon}, T.},
+    title = "{Fully Convolutional Pixel Adaptive Image Denoiser}",
+  journal = {ArXiv e-prints},
+archivePrefix = "arXiv",
+   eprint = {1807.07569},
+ primaryClass = "cs.CV",
+ keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, Statistics - Machine Learning},
+     year = 2018,
+    month = jul,
+   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180707569C},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
-```
---!>
+
