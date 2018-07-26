@@ -63,19 +63,19 @@
 - Keras v2.0.8
 
 
-# Citation
-
+# citation
+```
 @ARTICLE{2018arXiv180707569C,  
-   author = {{Cha}, S. and {Moon}, T.}a,  
+    author = {{Cha}, S. and {Moon}, T.}a,  
     title = "{Fully Convolutional Pixel Adaptive Image Denoiser}",  
-  journal = {ArXiv e-prints},  
-archivePrefix = "arXiv",  
-   eprint = {1807.07569},  
- primaryClass = "cs.CV",  
- keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, Statistics - Machine Learning},  
-     year = 2018,  
+    journal = {ArXiv e-prints},  
+    archivePrefix = "arXiv",  
+    eprint = {1807.07569},  
+    primaryClass = "cs.CV",  
+    keywords = {Computer Science - Computer Vision and Pattern Recognition, Computer Science - Machine Learning, Statistics - Machine Learning},  
+    year = 2018,  
     month = jul,  
-   adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180707569C},  
-  adsnote = {Provided by the SAO/NASA Astrophysics Data System}  
+    adsurl = {http://adsabs.harvard.edu/abs/2018arXiv180707569C},  
+    adsnote = {Provided by the SAO/NASA Astrophysics Data System}  
 }  
-
+```
